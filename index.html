@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO WEBSITE</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <style>
+        *{
+            margin: 0;
+            padding: 0
+            scroll-behavior: smooth;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+            font-size: large;
+        }
+        header{
+            background: linear-gradient(to right, #800000, #800000) ;
+            color:black;
+            text-align:left;
+            padding: 2rem 1rem;
+            animation: fadeInDown 1s ease-in-out;
+                }
+                nav a{
+                    color: black;
+                    text-decoration: none;
+                    margin: 0 1rem;
+                    font-weight: bolder;
+                    font-size: larger;   
+                    flex-wrap: nowrap; 
+                    padding: 10px;
+                    gap: 15px;
+                    white-space:nowrap;
+                    overflow-x: auto;
+
+                }
+                .nav-links{
+                    flex-wrap: nowrap; 
+                    padding: 10px 15px;
+                    gap: 15px;
+                    white-space:nowrap;
+                    overflow-x: auto;
+                }
+                
+                h1{
+                    color:#800000;
+                /* animation*/
+                /* @keyframes*/
+                animation-name: bounceIn;
+                animation-timing-function: ease-in-out;
+                animation-duration: 3s;
+                animation-delay: 0ms;
+                animation-iteration-count: 2;
+
+                  /* box-shadow: 1px 1px 5px black; */
+               transition-duration: infinite ;
+               transition-delay: 1s;
+               transition-timing-function: ease-in;
+                
+            }
+            @keyframes bounceIn{
+                0%{
+                    color: black;
+                    transform: scale(1.5);
+                }
+                50%{
+                    text-align: left;
+                    transform: scale(0);
+                }
+                100%{
+                    font-style: oblique;
+                    transform: scaleX(1.5);
+                    color: #800000;
+                }
+            }
+            .maroon{
+                color: #800000;
+            }
+            .first{
+                text-align: center;
+            }
+            .btn{
+                padding: 10px 20px; 
+               background-color: #800000;
+               color:black;
+               font-weight:bold;
+               border-radius: 5px;
+               align-items:right;
+               /* box-shadow: 1px 1px 5px black; */
+               border-left: 10px solid black;
+               transition-duration: 1s ;
+               transition-delay: 1s;
+               transition-timing-function: ease-in;
+            }
+            .btn:hover{
+                background-color: darkred;
+                color: black;
+                border:2px solid darkred;
+                box-shadow: #000;
+
+            }
+            #section{
+                background-color:#f9f9f9;
+                color: black;
+                font-size: larger;
+            }
+            .img1{
+                width: 500px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .about{
+                color: #800000;
+            }
+            #about{
+               font-size: larger;
+               color:black ;
+               background-color: white;
+            }
+            #services h2{
+                font-size: 2rem;
+                margin-bottom: 10px;
+                color: #800000;
+            }
+            #services p{
+                font-size: 1rem;
+                margin-bottom: 30px;
+                font-size:larger;
+            }
+            .services-list{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                max-width: 500px;
+                margin: auto;
+                font-size: larger;
+                background-color: mintcream;
+            }
+            .services-list li{
+                padding: 15px 20px;
+                border-radius: 10px;
+                font-weight: 500px;
+                font-size: 1,1rem;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            }
+            .contact{
+                color: #800000;
+            }
+            .project{
+                font-size: larger;
+            }
+           .name{
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+           }
+           .email{
+             width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+           }
+           .message{
+             width: 258px;
+            height: 100px;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+           }
+           #submit{
+             width: 150px; 
+             height: 50px;
+               background-color: #800000;
+               color:black;
+               font-weight:bolder;
+               font-size: larger;
+               border-radius: 10px;
+               align-items:center;
+               /* box-shadow: 1px 1px 5px black; */
+               border-left: 10px solid black;
+               transition-duration: 1s ;
+               transition-delay: 1s;
+               transition-timing-function: ease-in;
+            }
+            #submit:hover{
+                background-color: darkred;
+                color: black;
+                border:2px solid darkred;
+                box-shadow: #000;
+           }
+           .footer{
+            font-size: larger;
+            background-color: #f9f9f9;
+            font-size: larger;
+           }
+           .fa-whatsapp{
+            font-size: larger;
+            color: #25D366;
+           }
+           .fa-facebook{
+            font-size: larger;
+            color: #1877f2;
+           }
+           .fa-instagram{
+            font-size: larger;
+            color:#E1306C
+           }
+           .get{
+            background-color: mintcream;
+           }
+     </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div>
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#projects">PROJECTS</a>
+            </div>
+    </nav>
+</header>
+<div class="first">
+<h1>HI! I AM RAHMA ABDULLAHI</h1>
+<h2>Frontend <span class="maroon">Developer</span></h2>
+</div>
+<div class="container">
+    <section id="section">
+        <h2>Welcome!</h2>
+        <p>This is where I share my journey, showcase my expertise, and highlight the projects that inspire me.</p>
+        <p>I am dedicated to delivering impactful results. Take a look around to see what i have been working on.</p>
+        <p>I had love to connect and explore how we can work together!</p>
+        <br>
+        <a class="btn" href="Rahma_Abdullahi_CV.pdf">Download CV</a>
+    </section>
+<br>
+    <section class="section" id="about">
+<h2 class="about">ABOUT ME</h2>
+<img src="image1.jpeg" class="img1">
+<p>Hi! I am Rahma, a versatile front-End Developer with additional expertise.</p>
+<p>I am passionate about building dynamic, user-friendly web experiences and leveraging skill set to create innovative solutions</p>
+<ul>
+    <li>Designing and developing intuitive user interfaces using HTML, CSS, and javascript.</li>
+    <li>Ensuring seamless responsive design for exceptional user experiences across all devices.</li>
+    <li>Working with javascript to build robust, backend-integrated web solutions and automate tasks.</li>
+</ul>
+<p>I thrive on solving complex challenging, learning new tools, and staying ahead of industry trends. Whether it's crafting visually stunning websites or writing efficient code, I am committed to delivering results that exceed expectations.Let's collaborate and bring your ideas to life!</p>
+    </section>
+    <br>
+<div class="services-list">
+    <section class="section" id="services">
+        <h2>Services</h2>
+        <p>Here are some of the services I offer:</p>
+        <diV class="service-list li">
+        <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Design</li>
+            <li>Frontend Development</li>
+            <li>Graphic Design</li>
+        </ul>
+        </diV>
+    </section>
+</div>
+<br>
+<div class="get">
+    <section class="section" id="contact">
+<h2 class="contact">Get in Touch</h2>
+<p class="project">Want to collaborate or have a project in mind? Let's connect!</p>
+<br>
+<form>
+    <label>Name</label>
+    <input type="text" name="name"class="name"  placeholder="Your name" required/>
+<br>
+<br>
+<br>
+    <label>Email</label>
+    <input type="email" name="email"class="email" placeholder="your email" required/>
+<br>
+<br>
+<br>
+    <label>Message:</label>
+    <textarea name="message" class="message" rows="5" placeholder="Enter ypur message here..." required></textarea>
+<br>
+<br>
+<br>
+    <button type="submit" id="submit">Submit</button>
+    <br>
+    <br>
+    <br>
+</form>
+    </section>
+</div>>
+</div>
+<footer>
+    <p>Follow for more!
+        <a href="https://wa.me/2348036569240" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/share/1YzrcLG5UM/?mibextid=wwXIfr target="_blank><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <p>@2025 Rahma Abdullahi. All rights reserved!</p>
+    </p>
+</footer>
+</body>
+</html>
